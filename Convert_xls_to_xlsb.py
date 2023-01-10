@@ -7,7 +7,6 @@ import win32com.client as win32
 def Convert_xls_xlsb(files_list: list, location):
     """convert file"""
     xlExcel12 = 50
-    all_details_files = []
     xl = win32.Dispatch('Excel.Application')
     # xl.Visible = False
     for file in files_list:
